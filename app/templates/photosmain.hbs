@@ -1,0 +1,21 @@
+<h2>My Photo Album</h2>
+
+<form id="photoForm">
+  <input type="text" placeholder="URL" id= "photoURL">
+  <input type="text" placeholder="Title" id="photoTitle">
+  <input type="text" placeholder="Description" id="photoDesc">
+  <input type="text" placeholder="Date" id="photoDate">
+  <button id="addPhoto">Add Photo</button>
+</form>
+
+ {{#each photo}}
+
+    <li data-id="{{ _id }}">
+
+      <a href="#photo/{{ _id }}"><img src="{{ url }}"></a>
+        <p>{{ title }}</p>
+        <p>{{ description }}</p>
+        <p>{{ date }}</p>
+    </li>
+
+ {{/each}}

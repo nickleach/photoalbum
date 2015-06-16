@@ -1,6 +1,7 @@
 ;(function (){
 
   'use strict';
+
   window.app = {};
   window.app.Models = {};
   window.app.Collections = {};
