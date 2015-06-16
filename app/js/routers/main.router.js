@@ -1,6 +1,7 @@
 ;(function (){
 
   'use strict';
+
 app.Routers.MainRouter = Backbone.Router.extend({
 
   initialize: function (options){
@@ -21,7 +22,7 @@ app.Routers.MainRouter = Backbone.Router.extend({
     });
   },
 
-  singlePic: function(){
+  singlePic: function(id){
     new app.Views.SingleView({
       singleId: id,
       collection: this.collection

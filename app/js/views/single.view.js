@@ -1,11 +1,12 @@
 ;(function (){
 
   'use strict';
+
 app.Views.SingleView = Backbone.View.extend({
 
   className : 'single',
 
-  template: hbs.single,
+  template: hbs.photossingle,
 
  initialize: function (options) {
 
@@ -20,8 +21,8 @@ app.Views.SingleView = Backbone.View.extend({
 
     render: function () {
 
-      var photo = this.collection.get(this.singleId);
-      this.$el.html(this.template(photo.toJSON()));
+      var singlePic = this.collection.get(this.singleId);
+      this.$el.html(this.template(singlePic.toJSON()));
 
     }
 
