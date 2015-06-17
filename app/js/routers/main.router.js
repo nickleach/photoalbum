@@ -13,7 +13,8 @@ app.Routers.MainRouter = Backbone.Router.extend({
   },
   routes: {
     '' : 'homePage',
-    'pic/:id' : 'singlePic'
+    'pic/:id' : 'singlePic',
+    'add' : 'addNew'
   },
 
   homePage: function(){
@@ -27,6 +28,12 @@ app.Routers.MainRouter = Backbone.Router.extend({
       singleId: id,
       collection: this.collection
 
+    });
+  },
+
+  addNew: function(){
+    new app.Views.Add({
+      collection: this.collection
     });
   }
 

@@ -1,0 +1,21 @@
+
+h5{
+  display: inline-block;
+  margin-left: 20px;
+}
+.navi{
+  height: 50px;
+  background-color: navy;
+  color: white;
+  a{
+    text-decoration: none;
+    color: white;
+  }
+
+}
+.main{
+  list-style: none;
+  li{
+    display: inline-block;
+  }
+}
